@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+
+<meta charset="utf-8">
+
+<title>Partilha de Bens | CMSM Advocacia</title>
+
+<meta name="description" content="Precisa resolver partilha de bens? Entenda como funciona a divisão de patrimônio no divórcio ou na separação e fale com advogado.">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<meta name="robots" content="index,follow">
+
+<style>
+
+*{
+box-sizing:border-box;
+}
+
+body{
+margin:0;
+font-family:-apple-system,BlinkMacSystemFont,Arial,sans-serif;
+background:#0b1220;
+color:#e8edf6;
+line-height:1.6;
+}
+
+header{
+background:#071120;
+padding:18px 24px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid #1c2a44;
+gap:20px;
+}
+
+.brand{
+display:flex;
+align-items:center;
+gap:12px;
+text-decoration:none;
+color:#ffffff;
+}
+
+.brand img{
+height:52px;
+width:auto;
+display:block;
+}
+
+.brand span{
+font-weight:700;
+font-size:18px;
+line-height:1.2;
+}
+
+nav{
+display:flex;
+gap:18px;
+flex-wrap:wrap;
+}
+
+nav a{
+color:#f8f8f8;
+text-decoration:none;
+font-size:15px;
+font-weight:600;
+}
+
+nav a:hover{
+text-decoration:underline;
+}
+
+main{
+max-width:980px;
+margin:auto;
+padding:56px 24px;
+}
+
+.hero{
+text-align:center;
+padding:20px 0 10px 0;
+}
+
+.hero img{
+height:110px;
+width:auto;
+display:block;
+margin:0 auto 22px auto;
+}
+
+.hero h1{
+margin:0;
+font-size:38px;
+line-height:1.2;
+color:#ffffff;
+}
+
+.hero p{
+margin:14px auto 0 auto;
+font-size:18px;
+color:#b7c2da;
+max-width:760px;
+}
+
+.cta{
+margin-top:28px;
+display:flex;
+justify-content:center;
+gap:14px;
+flex-wrap:wrap;
+}
+
+.cta a{
+display:inline-block;
+padding:14px 22px;
+border-radius:10px;
+text-decoration:none;
+font-weight:700;
+font-size:16px;
+}
+
+.cta-primary{
+background:#25d366;
+color:#ffffff;
+}
+
+.cta-secondary{
+background:#1b2a46;
+color:#ffffff;
+}
+
+.section{
+margin-top:56px;
+}
+
+.section h2{
+font-size:28px;
+color:#ffffff;
+margin-bottom:18px;
+}
+
+.lead{
+font-size:17px;
+color:#c7d2e6;
+}
+
+.grid{
+display:grid;
+gap:24px;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+}
+
+.card{
+border:1px solid #1e2b45;
+border-radius:12px;
+padding:22px;
+background:#101a2d;
+}
+
+.card h3{
+margin-top:0;
+margin-bottom:10px;
+font-size:21px;
+color:#ffffff;
+}
+
+.card p{
+margin:0;
+font-size:15px;
+color:#b7c2da;
+}
+
+.list-box{
+border:1px solid #1e2b45;
+border-radius:12px;
+padding:22px;
+background:#101a2d;
+}
+
+.list-box ul{
+margin:0;
+padding-left:20px;
+}
+
+.list-box li{
+margin-bottom:10px;
+color:#b7c2da;
+}
+
+.highlight{
+border:1px solid #2b4b7f;
+background:#0f1f38;
+border-radius:12px;
+padding:22px;
+}
+
+.highlight p{
+margin:0;
+color:#dbe6f7;
+}
+
+.steps{
+display:grid;
+gap:24px;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+}
+
+.step{
+border:1px solid #1e2b45;
+border-radius:12px;
+padding:20px;
+background:#101a2d;
+}
+
+.step-number{
+display:inline-block;
+width:34px;
+height:34px;
+border-radius:999px;
+background:#25d366;
+color:#ffffff;
+text-align:center;
+line-height:34px;
+font-weight:700;
+margin-bottom:12px;
+}
+
+.step h3{
+margin:0 0 10px 0;
+font-size:20px;
+color:#ffffff;
+}
+
+.step p{
+margin:0;
+font-size:15px;
+color:#b7c2da;
+}
+
+.faq-item{
+border:1px solid #1e2b45;
+border-radius:12px;
+padding:18px 20px;
+background:#101a2d;
+margin-bottom:16px;
+}
+
+.faq-item strong{
+display:block;
+margin-bottom:8px;
+font-size:18px;
+color:#ffffff;
+}
+
+.faq-item p{
+margin:0;
+color:#b7c2da;
+}
+
+.contact-box{
+border:1px solid #1e2b45;
+border-radius:12px;
+padding:24px;
+background:#101a2d;
+text-align:center;
+}
+
+.contact-box p{
+color:#b7c2da;
+}
+
+footer{
+margin-top:60px;
+background:#071120;
+color:#9fb0cf;
+padding:26px 24px;
+text-align:center;
+font-size:14px;
+border-top:1px solid #1c2a44;
+}
+
+@media(max-width:800px){
+
+header{
+flex-direction:column;
+align-items:flex-start;
+gap:14px;
+}
+
+nav{
+justify-content:flex-start;
+}
+
+main{
+padding:40px 18px;
+}
+
+.hero h1{
+font-size:30px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.hero img{
+height:90px;
+}
+
+.brand span{
+font-size:16px;
+}
+
+.section h2{
+font-size:24px;
+}
+
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<a href="index.html" class="brand">
+<img src="logo.png" alt="CMSM Advocacia">
+<span>CMSM Advocacia</span>
+</a>
+
+<nav>
+<a href="index.html">Início</a>
+<a href="#como-funciona">Como funciona</a>
+<a href="#duvidas">Dúvidas</a>
+<a href="#contato">Contato</a>
+</nav>
+
+</header>
+
+<main>
+
+<section class="hero">
+
+<img src="logo.png" alt="CMSM Advocacia">
+
+<h1>Precisa resolver a partilha de bens?</h1>
+
+<p>
+Entenda como funciona a divisão do patrimônio na separação ou no divórcio e tire suas dúvidas com advogado.
+</p>
+
+<div class="cta">
+<a class="cta-primary" href="https://wa.me/5512974063026?text=Olá,%20preciso%20de%20orientação%20sobre%20partilha%20de%20bens.">Falar agora no WhatsApp</a>
+<a class="cta-secondary" href="#duvidas">Ver dúvidas frequentes</a>
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="highlight">
+<p>
+Muita discussão em separação não é sobre o fim do relacionamento. É sobre patrimônio. Imóvel, carro, empresa, financiamento, saldo em conta, dívidas e tudo o que foi construído durante a relação podem gerar conflito. Por isso é importante entender o que realmente entra ou não na partilha.
+</p>
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Quando a partilha precisa ser analisada</h2>
+
+<div class="list-box">
+<ul>
+<li>quando existe imóvel, carro ou outros bens no nome de um ou dos dois;</li>
+<li>quando houve compra de patrimônio durante o casamento ou união;</li>
+<li>quando há dúvida sobre o que cada um tem direito;</li>
+<li>quando existe financiamento, dívida ou bem em construção;</li>
+<li>quando uma das partes esconde informação ou patrimônio;</li>
+<li>quando você quer fazer acordo sem correr risco de prejuízo.</li>
+</ul>
+</div>
+
+<div class="cta">
+<a class="cta-primary" href="https://wa.me/5512974063026?text=Olá,%20quero%20entender%20como%20funciona%20a%20partilha%20de%20bens.">Quero entender meu caso</a>
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>O que pode entrar na discussão</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Imóveis</h3>
+<p>Casa, apartamento, terreno e imóvel financiado podem precisar de análise específica.</p>
+</div>
+
+<div class="card">
+<h3>Veículos</h3>
+<p>Carro, moto e outros veículos também podem entrar na divisão patrimonial.</p>
+</div>
+
+<div class="card">
+<h3>Dinheiro e saldos</h3>
+<p>Conta bancária, investimentos, aplicações e valores acumulados podem ser discutidos.</p>
+</div>
+
+<div class="card">
+<h3>Empresa ou participação</h3>
+<p>Dependendo do caso, empresa, cotas ou participação societária também podem gerar discussão.</p>
+</div>
+
+<div class="card">
+<h3>Dívidas</h3>
+<p>Nem toda dívida entra da mesma forma. É preciso ver origem, data e finalidade.</p>
+</div>
+
+<div class="card">
+<h3>Bens ocultos</h3>
+<p>Quando existe suspeita de ocultação, a estratégia precisa ser pensada com mais cuidado.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="como-funciona" class="section">
+
+<h2>Como funciona o atendimento</h2>
+
+<div class="steps">
+
+<div class="step">
+<div class="step-number">1</div>
+<h3>Análise inicial</h3>
+<p>Você informa quais bens existem, se há acordo e qual é a situação atual.</p>
+</div>
+
+<div class="step">
+<div class="step-number">2</div>
+<h3>Leitura do cenário</h3>
+<p>É analisado o tipo de patrimônio e o contexto em que os bens foram adquiridos.</p>
+</div>
+
+<div class="step">
+<div class="step-number">3</div>
+<h3>Definição da estratégia</h3>
+<p>É avaliado se o caso comporta acordo ou se será necessário discutir judicialmente.</p>
+</div>
+
+<div class="step">
+<div class="step-number">4</div>
+<h3>Condução</h3>
+<p>O caso segue com orientação e acompanhamento conforme a necessidade concreta.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Por que não é bom decidir isso no impulso</h2>
+
+<div class="list-box">
+<ul>
+<li>porque você pode abrir mão de patrimônio sem perceber;</li>
+<li>porque acordo mal feito gera problema depois;</li>
+<li>porque nem tudo que está no nome de um só fica com essa pessoa automaticamente;</li>
+<li>porque dívida e financiamento precisam ser entendidos antes de qualquer assinatura;</li>
+<li>porque uma decisão errada agora pode gerar prejuízo grande depois.</li>
+</ul>
+</div>
+
+<div class="cta">
+<a class="cta-primary" href="https://wa.me/5512974063026?text=Olá,%20quero%20orientação%20sobre%20partilha%20de%20bens.">Receber orientação agora</a>
+</div>
+
+</section>
+
+<section id="duvidas" class="section">
+
+<h2>Dúvidas frequentes sobre partilha de bens</h2>
+
+<div class="faq-item">
+<strong>1. Todo bem precisa ser dividido?</strong>
+<p>Não. Isso depende da situação do casal e da forma como o patrimônio foi construído.</p>
+</div>
+
+<div class="faq-item">
+<strong>2. O que está no nome de apenas um entra na partilha?</strong>
+<p>Em alguns casos, sim. O fato de estar no nome de uma pessoa só não resolve tudo sozinho.</p>
+</div>
+
+<div class="faq-item">
+<strong>3. Imóvel financiado entra na divisão?</strong>
+<p>Pode entrar. O financiamento exige análise específica.</p>
+</div>
+
+<div class="faq-item">
+<strong>4. Carro comprado durante a relação entra na partilha?</strong>
+<p>Pode entrar, dependendo do contexto do caso.</p>
+</div>
+
+<div class="faq-item">
+<strong>5. Dinheiro em conta bancária pode ser discutido?</strong>
+<p>Sim, em determinadas situações isso também pode fazer parte da discussão patrimonial.</p>
+</div>
+
+<div class="faq-item">
+<strong>6. E se houver empresa no meio?</strong>
+<p>A existência de empresa exige cuidado maior e análise própria.</p>
+</div>
+
+<div class="faq-item">
+<strong>7. Dívida também é dividida?</strong>
+<p>Nem sempre da mesma forma. É preciso entender a origem e a finalidade da dívida.</p>
+</div>
+
+<div class="faq-item">
+<strong>8. Dá para fazer acordo sobre a partilha?</strong>
+<p>Sim. Em muitos casos isso é possível, desde que as partes estejam de acordo e entendam o que estão assinando.</p>
+</div>
+
+<div class="faq-item">
+<strong>9. A partilha precisa acontecer junto com o divórcio?</strong>
+<p>Nem sempre. Em alguns casos isso pode ser tratado junto, em outros não.</p>
+</div>
+
+<div class="faq-item">
+<strong>10. E se eu achar que o outro está escondendo bens?</strong>
+<p>Isso precisa ser avaliado com cuidado para definir a melhor estratégia.</p>
+</div>
+
+<div class="faq-item">
+<strong>11. Herança entra na partilha?</strong>
+<p>Nem toda herança entra da mesma forma. Isso depende da situação concreta.</p>
+</div>
+
+<div class="faq-item">
+<strong>12. Posso conversar antes de assinar qualquer acordo?</strong>
+<p>Sim, e isso é o mais recomendado quando existe patrimônio relevante envolvido.</p>
+</div>
+
+</section>
+
+<section id="contato" class="section">
+
+<h2>Fale agora e entenda sua situação</h2>
+
+<div class="contact-box">
+<p>
+Para facilitar, envie no WhatsApp:
+</p>
+
+<div class="list-box" style="text-align:left; margin-top:18px;">
+<ul>
+<li>sua cidade;</li>
+<li>quais bens existem;</li>
+<li>se há acordo ou conflito;</li>
+<li>se já existe divórcio em andamento;</li>
+<li>um resumo curto da situação.</li>
+</ul>
+</div>
+
+<p style="margin-top:22px;">
+Entrando em contato, também será possível esclarecer outras dúvidas sobre o seu caso.
+</p>
+
+<div class="cta">
+<a class="cta-primary" href="https://wa.me/5512974063026?text=Olá,%20vim%20pela%20página%20de%20partilha%20de%20bens%20e%20quero%20entender%20meu%20caso.">Falar com advogado no WhatsApp</a>
+</div>
+</div>
+
+</section>
+
+</main>
+
+<footer>
+© 2026 CMSM Advocacia
+</footer>
+
+</body>
+</html>

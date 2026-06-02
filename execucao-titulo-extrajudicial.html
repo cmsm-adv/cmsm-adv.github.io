@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Execução de Título Extrajudicial | CMSM Advocacia</title>
+  <meta name="description" content="Execução de título extrajudicial e cobrança judicial com atendimento online em todo o Brasil. Fale com a CMSM Advocacia e entenda o melhor caminho para cobrar seu crédito." />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:title" content="Execução de Título Extrajudicial | CMSM Advocacia" />
+  <meta property="og:description" content="Atendimento jurídico online em todo o Brasil para cobrança de dívida, execução de cheque, nota promissória, contrato, confissão de dívida e outros títulos executivos." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <link rel="canonical" href="https://www.cmsm.com.br/execucao-titulo-extrajudicial.html" />
+  <style>
+    :root {
+      --bg: #0f172a;
+      --bg-soft: #111827;
+      --surface: #ffffff;
+      --surface-soft: #f8fafc;
+      --text: #0f172a;
+      --muted: #475569;
+      --line: #e2e8f0;
+      --line-dark: rgba(255,255,255,0.12);
+      --accent: #16a34a;
+      --accent-dark: #15803d;
+      --gold: #b0894f;
+      --max: 1120px;
+      --radius: 16px;
+      --shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--surface);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(calc(100% - 32px), var(--max));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(15, 23, 42, 0.96);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line-dark);
+    }
+
+    .site-header-inner {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: inline-flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .brand-title {
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .brand-subtitle {
+      color: rgba(255,255,255,0.72);
+      font-size: 0.86rem;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    .nav a {
+      color: rgba(255,255,255,0.84);
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+
+    .nav a:hover {
+      color: #ffffff;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      border: 0;
+      font-size: 0.96rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-1px);
+    }
+
+    .button-primary {
+      background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+      color: #ffffff;
+    }
+
+    .button-secondary {
+      background: transparent;
+      color: #ffffff;
+      border: 1px solid rgba(255,255,255,0.18);
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--bg) 0%, var(--bg-soft) 100%);
+      color: #ffffff;
+      padding: 72px 0 56px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .hero-kicker {
+      display: inline-block;
+      margin-bottom: 14px;
+      padding: 8px 12px;
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 999px;
+      color: rgba(255,255,255,0.88);
+      font-size: 0.84rem;
+      font-weight: 700;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      line-height: 1.08;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      color: rgba(255,255,255,0.82);
+      font-size: 1.03rem;
+      max-width: 58ch;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 26px;
+      margin-bottom: 22px;
+    }
+
+    .hero-points {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      list-style: none;
+    }
+
+    .hero-points li {
+      padding: 12px 14px;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.08);
+      color: rgba(255,255,255,0.9);
+      font-size: 0.94rem;
+    }
+
+    .hero-card {
+      background: #ffffff;
+      color: var(--text);
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 24px 60px rgba(2, 6, 23, 0.24);
+    }
+
+    .hero-card h2 {
+      font-size: 1.3rem;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+
+    .hero-card p {
+      color: var(--muted);
+      margin-bottom: 18px;
+      font-size: 0.96rem;
+    }
+
+    .hero-card ul {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .hero-card li {
+      background: var(--surface-soft);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 11px 12px;
+      font-size: 0.94rem;
+    }
+
+    .hero-badges {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .hero-badges div {
+      background: var(--bg);
+      color: #ffffff;
+      border-radius: 12px;
+      padding: 12px 10px;
+      text-align: center;
+      font-size: 0.88rem;
+    }
+
+    .hero-badges strong {
+      display: block;
+      font-size: 1rem;
+      margin-bottom: 2px;
+    }
+
+    section {
+      padding: 64px 0;
+    }
+
+    .section-title {
+      max-width: 780px;
+      margin-bottom: 26px;
+    }
+
+    .section-title .eyebrow-dark {
+      display: inline-block;
+      margin-bottom: 10px;
+      color: var(--gold);
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .section-title h2 {
+      font-size: clamp(1.7rem, 4vw, 2.5rem);
+      line-height: 1.15;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: var(--muted);
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .card-number {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      background: #f3f4f6;
+      color: var(--text);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    .card h3 {
+      font-size: 1.08rem;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .section-soft {
+      background: var(--surface-soft);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+    }
+
+    .list-box {
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .list-box h3 {
+      font-size: 1.12rem;
+      margin-bottom: 12px;
+    }
+
+    .list-box ul {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+    }
+
+    .list-box li {
+      position: relative;
+      padding-left: 18px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .list-box li::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--gold);
+      position: absolute;
+      left: 0;
+      top: 10px;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .step {
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 22px;
+      box-shadow: var(--shadow);
+    }
+
+    .step strong {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 38px;
+      height: 38px;
+      border-radius: 999px;
+      background: var(--bg);
+      color: #ffffff;
+      font-size: 0.96rem;
+      margin-bottom: 12px;
+    }
+
+    .step h3 {
+      font-size: 1.04rem;
+      margin-bottom: 8px;
+    }
+
+    .step p {
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .faq {
+      display: grid;
+      gap: 12px;
+    }
+
+    details {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #ffffff;
+      padding: 16px 18px;
+    }
+
+    summary {
+      cursor: pointer;
+      list-style: none;
+      font-weight: 700;
+      position: relative;
+      padding-right: 22px;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::after {
+      content: "+";
+      position: absolute;
+      right: 0;
+      top: 0;
+      color: var(--gold);
+      font-size: 1.1rem;
+    }
+
+    details[open] summary::after {
+      content: "−";
+    }
+
+    details p {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .cta-final {
+      background: linear-gradient(135deg, var(--bg) 0%, var(--bg-soft) 100%);
+      color: #ffffff;
+    }
+
+    .cta-final-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .cta-final h2 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      line-height: 1.1;
+      margin-bottom: 10px;
+    }
+
+    .cta-final p {
+      color: rgba(255,255,255,0.76);
+    }
+
+    .cta-final-box {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 18px;
+      padding: 24px;
+    }
+
+    .cta-final-box strong {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 1.08rem;
+    }
+
+    .cta-final-box ul {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+      margin-bottom: 18px;
+      color: rgba(255,255,255,0.88);
+      font-size: 0.94rem;
+    }
+
+    .site-footer {
+      background: #0b1220;
+      color: rgba(255,255,255,0.78);
+      padding: 28px 0 94px;
+    }
+
+    .site-footer p {
+      font-size: 0.92rem;
+      margin-bottom: 4px;
+    }
+
+    .floating-whatsapp {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 1000;
+    }
+
+    .floating-whatsapp a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 62px;
+      height: 62px;
+      padding: 0 18px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #22c55e, #16a34a);
+      color: #ffffff;
+      font-weight: 700;
+      box-shadow: 0 18px 40px rgba(34,197,94,0.35);
+    }
+
+    .mobile-cta {
+      display: none;
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .grid-3,
+      .split,
+      .steps,
+      .cta-final-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-points,
+      .hero-badges {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .site-header-inner {
+        min-height: 72px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 12px 0;
+      }
+
+      .brand {
+        width: 100%;
+        align-items: center;
+      }
+
+      .nav {
+        justify-content: center;
+      }
+
+      .hero {
+        padding-top: 56px;
+        padding-bottom: 46px;
+      }
+
+      section {
+        padding: 52px 0;
+      }
+
+      .hero-card,
+      .card,
+      .list-box,
+      .step,
+      .cta-final-box {
+        padding: 20px;
+      }
+
+      .floating-whatsapp {
+        display: none;
+      }
+
+      .mobile-cta {
+        display: block;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1000;
+        background: rgba(255,255,255,0.97);
+        border-top: 1px solid var(--line);
+        padding: 10px 14px;
+      }
+
+      .mobile-cta a {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header-inner">
+      <a class="brand" href="/">
+        <span class="brand-title">CMSM Advocacia</span>
+        <span class="brand-subtitle">Atendimento online em todo o Brasil</span>
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="/">Início</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#faq">Dúvidas</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <a class="button button-primary" href="https://wa.me/5512974063026?text=Ol%C3%A1%2C%20quero%20entender%20como%20funciona%20a%20execu%C3%A7%C3%A3o%20de%20t%C3%ADtulo%20extrajudicial." target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="hero-kicker">Cobrança judicial • Crédito • Atendimento online</span>
+          <h1>Execução de título extrajudicial com orientação jurídica clara e foco em resultado</h1>
+          <p>Cobrança judicial de dívida fundada em cheque, nota promissória, contrato, confissão de dívida e outros títulos executivos, com análise técnica do crédito, leitura documental e condução prática do caso em todo o Brasil.</p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://wa.me/5512974063026?text=Ol%C3%A1%2C%20quero%20falar%20sobre%20execu%C3%A7%C3%A3o%20de%20t%C3%ADtulo%20extrajudicial." target="_blank" rel="noopener noreferrer">Falar com advogado</a>
+            <a class="button button-secondary" href="#como-funciona">Entender como funciona</a>
+          </div>
+
+          <ul class="hero-points">
+            <li>Análise inicial do título e da viabilidade da cobrança</li>
+            <li>Atendimento jurídico online em todo o Brasil</li>
+            <li>Leitura prática de documentos e estratégia processual</li>
+            <li>Condução objetiva com foco na recuperação do crédito</li>
+          </ul>
+        </div>
+
+        <aside class="hero-card">
+          <h2>O primeiro passo é entender se a dívida está pronta para cobrança judicial</h2>
+          <p>Entrando em contato, é possível apresentar o documento, explicar a origem da dívida e identificar o caminho jurídico mais adequado para a recuperação do crédito.</p>
+
+          <ul>
+            <li>Leitura inicial do título e dos documentos disponíveis</li>
+            <li>Verificação prática da estrutura do crédito</li>
+            <li>Orientação sobre viabilidade e próximos passos</li>
+            <li>Encaminhamento objetivo do caso</li>
+          </ul>
+
+          <a class="button button-primary" style="width:100%;" href="https://wa.me/5512974063026?text=Ol%C3%A1%2C%20quero%20iniciar%20meu%20atendimento%20sobre%20cobran%C3%A7a%20judicial." target="_blank" rel="noopener noreferrer">Iniciar atendimento</a>
+
+          <div class="hero-badges">
+            <div>
+              <strong>Crédito</strong>
+              <span>em análise</span>
+            </div>
+            <div>
+              <strong>Contato</strong>
+              <span>direto</span>
+            </div>
+            <div>
+              <strong>Clareza</strong>
+              <span>jurídica</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow-dark">Por que procurar orientação</span>
+          <h2>Cobrar judicialmente exige leitura técnica do documento e da estratégia processual</h2>
+          <p>Nem toda dívida está estruturada da mesma forma. A análise do título, do vencimento, da documentação e das circunstâncias do caso é o que define o melhor caminho para buscar a satisfação do crédito com mais eficiência.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <div class="card-number">01</div>
+            <h3>Leitura do título</h3>
+            <p>Antes de agir, é preciso verificar se o documento comporta execução direta ou se exige outro tipo de medida judicial.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-number">02</div>
+            <h3>Estratégia correta</h3>
+            <p>A forma de cobrar muda conforme o tipo de documento, a origem da dívida e a estrutura probatória disponível.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-number">03</div>
+            <h3>Condução objetiva</h3>
+            <p>O caso avança melhor quando o credor entende o cenário, os riscos, os custos e a lógica prática da cobrança.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-soft" id="como-funciona">
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow-dark">Como funciona</span>
+          <h2>O atendimento foi pensado para transformar documento em estratégia de cobrança</h2>
+          <p>O objetivo é sair da dúvida inicial, entender a força jurídica do título e organizar a atuação de forma prática.</p>
+        </div>
+
+        <div class="steps">
+          <article class="step">
+            <strong>1</strong>
+            <h3>Contato</h3>
+            <p>Você explica a dívida, informa a origem do crédito e apresenta os documentos principais do caso.</p>
+          </article>
+
+          <article class="step">
+            <strong>2</strong>
+            <h3>Análise</h3>
+            <p>É feita a leitura técnica do título, do vencimento, da documentação e da viabilidade da cobrança judicial.</p>
+          </article>
+
+          <article class="step">
+            <strong>3</strong>
+            <h3>Estratégia</h3>
+            <p>São indicados os caminhos jurídicos possíveis, conforme a natureza do crédito e a estrutura probatória disponível.</p>
+          </article>
+
+          <article class="step">
+            <strong>4</strong>
+            <h3>Condução</h3>
+            <p>Com a contratação, a cobrança segue com atuação processual clara, organizada e focada na recuperação do crédito.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container split">
+        <div class="list-box">
+          <h3>Casos normalmente relacionados</h3>
+          <ul>
+            <li>Cheque</li>
+            <li>Nota promissória</li>
+            <li>Confissão de dívida</li>
+            <li>Contrato com força executiva</li>
+            <li>Título executivo extrajudicial em geral</li>
+          </ul>
+        </div>
+
+        <div class="list-box">
+          <h3>O que costuma ser útil no início</h3>
+          <ul>
+            <li>Cópia do documento ou título</li>
+            <li>Informações sobre vencimento e inadimplemento</li>
+            <li>Histórico básico da relação entre as partes</li>
+            <li>Indicação do que já foi tentado para cobrança</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow-dark">Dúvidas frequentes</span>
+          <h2>Perguntas comuns antes de iniciar a análise</h2>
+          <p>Essas respostas ajudam a organizar o primeiro contato. O enquadramento jurídico depende sempre do documento e da situação concreta.</p>
+        </div>
+
+        <div class="faq">
+          <details>
+            <summary>Toda dívida pode ser executada diretamente?</summary>
+            <p>Não. Isso depende do tipo de documento e da sua estrutura jurídica. Em alguns casos, a cobrança segue por execução; em outros, o caminho pode ser diferente.</p>
+          </details>
+
+          <details>
+            <summary>Preciso já ter tudo organizado para pedir análise?</summary>
+            <p>Não. O primeiro passo é apresentar o que você tem. A partir daí, é possível avaliar a utilidade dos documentos e indicar o que mais pode ser necessário.</p>
+          </details>
+
+          <details>
+            <summary>Cheque e nota promissória podem ser usados para cobrança judicial?</summary>
+            <p>Podem, conforme a situação concreta, os prazos aplicáveis e a estrutura documental do caso.</p>
+          </details>
+
+          <details>
+            <summary>Contrato assinado serve para execução?</summary>
+            <p>Depende da forma do contrato e dos requisitos legais envolvidos. Isso precisa ser verificado no documento específico.</p>
+          </details>
+
+          <details>
+            <summary>Quanto tempo demora?</summary>
+            <p>O tempo varia conforme o tipo de crédito, a complexidade da cobrança, a resposta do devedor e os atos processuais necessários.</p>
+          </details>
+
+          <details>
+            <summary>Como começar?</summary>
+            <p>O caminho mais rápido é explicar a dívida pelo WhatsApp e encaminhar o documento principal para leitura inicial do caso.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-final" id="contato">
+      <div class="container cta-final-grid">
+        <div>
+          <h2>Explique a dívida e entenda o caminho jurídico adequado para cobrar</h2>
+          <p>Cada crédito tem uma estrutura própria. Entrando em contato, é possível iniciar a análise técnica do documento e definir um encaminhamento mais seguro e útil.</p>
+        </div>
+
+        <div class="cta-final-box">
+          <strong>Fale diretamente pelo WhatsApp</strong>
+          <ul>
+            <li>Explique o caso</li>
+            <li>Apresente o documento principal</li>
+            <li>Entenda os próximos passos possíveis</li>
+          </ul>
+          <a class="button button-primary" style="width:100%;" href="https://wa.me/5512974063026?text=Ol%C3%A1%2C%20quero%20falar%20sobre%20execu%C3%A7%C3%A3o%20de%20t%C3%ADtulo%20extrajudicial." target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>CMSM Advocacia</strong></p>
+      <p>© 2026 — Todos os direitos reservados.</p>
+      <p>WhatsApp: +55 12 97406-3026</p>
+      <p>E-mail: contato@cmsm.com.br</p>
+      <p>Atendimento online em todo o Brasil.</p>
+    </div>
+  </footer>
+
+  <div class="floating-whatsapp">
+    <a href="https://wa.me/5512974063026?text=Ol%C3%A1%2C%20quero%20falar%20sobre%20execu%C3%A7%C3%A3o%20de%20t%C3%ADtulo%20extrajudicial." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+  </div>
+
+  <div class="mobile-cta">
+    <a class="button button-primary" href="https://wa.me/5512974063026?text=Ol%C3%A1%2C%20quero%20falar%20sobre%20execu%C3%A7%C3%A3o%20de%20t%C3%ADtulo%20extrajudicial." target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
+  </div>
+</body>
+</html>
