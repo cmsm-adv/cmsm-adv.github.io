@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Responsabilidade do banco em fraudes: o que diz o STJ | CMSM Advocacia</title>
+  <meta name="description" content="Entenda quando o banco pode ser responsabilizado por fraudes bancárias, golpe PIX, transações não reconhecidas, empréstimos fraudulentos e o que diz o STJ sobre o tema.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.cmsm.com.br/art-responsabilidade-banco-fraudes-stj.html">
+
+  <meta property="og:title" content="Responsabilidade do banco em fraudes: o que diz o STJ">
+  <meta property="og:description" content="Veja quando instituições financeiras podem responder por fraudes, golpes bancários, movimentações indevidas e falhas de segurança.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.cmsm.com.br/art-responsabilidade-banco-fraudes-stj.html">
+  <meta property="og:site_name" content="CMSM Advocacia">
+
+  <style>
+    :root {
+      --bg: #0b1220;
+      --header: #071120;
+      --card: #101a2d;
+      --card2: #162033;
+      --card3: #1c2a44;
+      --text: #f8fafc;
+      --muted: #cbd5e1;
+      --gold: #d6b36a;
+      --gold2: #f0d58a;
+      --border: rgba(255,255,255,.12);
+      --max: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: radial-gradient(circle at top, #182338 0, #0b1220 42%, #070b13 100%);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    header {
+      background: rgba(7, 17, 32, .96);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(10px);
+    }
+
+    .nav {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 16px 22px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      letter-spacing: .3px;
+      white-space: nowrap;
+    }
+
+    .brand img {
+      width: 38px;
+      height: 38px;
+      object-fit: contain;
+      display: block;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .nav-links a:hover {
+      color: var(--gold2);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 18px;
+      border-radius: 999px;
+      background: var(--gold);
+      color: #0b1220;
+      font-weight: 700;
+      border: 1px solid var(--gold);
+      line-height: 1.2;
+    }
+
+    .btn.secondary {
+      background: transparent;
+      color: var(--text);
+      border-color: var(--border);
+    }
+
+    .hero {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 78px 22px 42px;
+    }
+
+    .hero-logo {
+      width: 78px;
+      height: 78px;
+      object-fit: contain;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .office-name {
+      color: var(--gold2);
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: .4px;
+      margin-bottom: 8px;
+    }
+
+    .office-subtitle {
+      color: var(--muted);
+      font-size: 15px;
+      margin-bottom: 18px;
+    }
+
+    .kicker {
+      color: var(--gold2);
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 1.4px;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: clamp(36px, 5vw, 58px);
+      line-height: 1.05;
+      margin: 0 0 22px;
+      max-width: 940px;
+    }
+
+    .hero p {
+      color: var(--muted);
+      font-size: 19px;
+      max-width: 860px;
+      margin: 0;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    main {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 22px 72px;
+    }
+
+    .trust-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+
+    .trust-item {
+      background: rgba(17, 24, 39, .86);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 16px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 320px;
+      gap: 28px;
+      align-items: start;
+    }
+
+    article {
+      background: rgba(17, 24, 39, .92);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 36px;
+      box-shadow: 0 24px 60px rgba(0,0,0,.22);
+    }
+
+    article h2 {
+      font-size: 28px;
+      line-height: 1.25;
+      margin: 40px 0 14px;
+    }
+
+    article h3 {
+      font-size: 21px;
+      margin: 26px 0 10px;
+      color: var(--gold2);
+    }
+
+    article p,
+    article li {
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    article p {
+      margin: 0 0 16px;
+    }
+
+    article ul {
+      margin: 0 0 18px;
+      padding-left: 22px;
+    }
+
+    article a {
+      color: var(--gold2);
+      font-weight: 700;
+    }
+
+    .box {
+      background: var(--card2);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 22px;
+      margin: 24px 0;
+    }
+
+    .box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .warning-box {
+      background: rgba(214, 179, 106, .09);
+      border: 1px solid rgba(214, 179, 106, .28);
+      border-radius: 18px;
+      padding: 22px;
+      margin: 24px 0;
+    }
+
+    .warning-box p {
+      color: var(--text);
+    }
+
+    .links-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin: 30px 0;
+    }
+
+    .links-grid a {
+      background: var(--card2);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 16px;
+      color: var(--text);
+      font-weight: 800;
+    }
+
+    .links-grid span {
+      display: block;
+      color: var(--muted);
+      font-weight: 400;
+      font-size: 14px;
+      margin-top: 6px;
+    }
+
+    details {
+      background: var(--card2);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 16px 18px;
+      margin-bottom: 12px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 800;
+      color: var(--text);
+    }
+
+    details p {
+      margin-top: 12px;
+      margin-bottom: 0;
+    }
+
+    aside {
+      position: sticky;
+      top: 90px;
+    }
+
+    .side-card {
+      background: rgba(17, 24, 39, .92);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 24px;
+      margin-bottom: 18px;
+    }
+
+    .side-card h2 {
+      margin: 0 0 12px;
+      font-size: 21px;
+    }
+
+    .side-card p,
+    .side-card li {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .side-card ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .cta-section {
+      margin-top: 42px;
+      background: linear-gradient(135deg, #1c2a44, #111827);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 30px;
+    }
+
+    .cta-section h2 {
+      margin-top: 0;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      background: rgba(7, 17, 32, .98);
+      padding: 28px 22px;
+      color: var(--muted);
+    }
+
+    .footer-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+      font-size: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+      }
+
+      .trust-strip {
+        grid-template-columns: 1fr;
+      }
+
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      aside {
+        position: static;
+      }
+
+      article {
+        padding: 24px;
+      }
+
+      .links-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "CMSM Advocacia",
+    "url": "https://www.cmsm.com.br/",
+    "areaServed": "BR",
+    "telephone": "+55 12 97406-3026",
+    "email": "contato@cmsm.com.br"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Responsabilidade do banco em fraudes: o que diz o STJ",
+    "description": "Entenda quando o banco pode ser responsabilizado por fraudes bancárias, golpe PIX, transações não reconhecidas, empréstimos fraudulentos e o que diz o STJ sobre o tema.",
+    "author": {
+      "@type": "Organization",
+      "name": "CMSM Advocacia"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "CMSM Advocacia"
+    },
+    "mainEntityOfPage": "https://www.cmsm.com.br/art-responsabilidade-banco-fraudes-stj.html"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "O banco responde por fraude bancária?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O banco pode responder por fraude bancária quando houver falha na prestação do serviço, defeito de segurança, movimentação incompatível com o perfil do cliente ou omissão da instituição financeira diante de sinais de fraude."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "O que diz a Súmula 479 do STJ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A Súmula 479 do STJ estabelece que as instituições financeiras respondem objetivamente pelos danos gerados por fortuito interno relativo a fraudes e delitos praticados por terceiros no âmbito de operações bancárias."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Golpe PIX gera responsabilidade do banco?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Depende do caso. Pode haver responsabilidade quando a fraude revela falha de segurança, ausência de bloqueio preventivo, movimentação atípica ignorada ou resposta inadequada da instituição financeira."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <a class="brand" href="index.html" aria-label="CMSM Advocacia">
+        <img src="logo.png" alt="CMSM Advocacia">
+        <span>CMSM Advocacia</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html">Início</a>
+        <a href="index.html#atuacao">Atuação</a>
+        <a href="index.html#metodo">Método</a>
+        <a href="artigos.html">Artigos</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contato.html">Contato</a>
+        <a class="btn" href="https://wa.me/5512974063026">WhatsApp</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img class="hero-logo" src="logo.png" alt="CMSM Advocacia">
+    <div class="office-name">Campos Melo & Silva Machado</div>
+    <div class="office-subtitle">Advocacia</div>
+    <div class="kicker">Direito Bancário e Consumidor</div>
+    <h1>Responsabilidade do banco em fraudes: o que diz o STJ</h1>
+    <p>Fraudes bancárias, golpe PIX, transações não reconhecidas, empréstimos fraudulentos e movimentações atípicas podem gerar responsabilidade da instituição financeira quando houver falha de segurança ou defeito na prestação do serviço.</p>
+
+    <div class="hero-actions">
+      <a class="btn" href="https://wa.me/5512974063026">Falar agora com advogado</a>
+      <a class="btn secondary" href="fraudes-bancarias.html">Ver atuação em fraudes bancárias</a>
+    </div>
+  </section>
+
+  <main>
+    <section class="trust-strip">
+      <div class="trust-item">Atendimento online em todo o Brasil</div>
+      <div class="trust-item">Análise técnica da fraude bancária</div>
+      <div class="trust-item">Avaliação de provas e documentos</div>
+      <div class="trust-item">Estudo da responsabilidade do banco</div>
+    </section>
+
+    <div class="layout">
+      <article>
+        <div class="box">
+          <p>A discussão sobre responsabilidade do banco em fraudes bancárias não depende apenas de o consumidor ter perdido dinheiro. O ponto central é verificar se a instituição financeira falhou no dever de segurança, ignorou sinais de fraude, permitiu movimentação incompatível com o perfil do cliente ou deixou de agir de forma adequada após a comunicação do problema.</p>
+        </div>
+
+        <h2>O banco responde por golpes e fraudes?</h2>
+        <p>O banco pode responder por golpes e fraudes quando a situação revela defeito na prestação do serviço. Isso ocorre, por exemplo, quando há movimentação bancária incompatível com o perfil do consumidor, transações sucessivas fora do padrão, falha de autenticação, empréstimo não contratado, compra não reconhecida ou omissão na análise de uma contestação feita pelo cliente.</p>
+
+        <p>A responsabilidade não é automática em todos os casos. Cada situação precisa ser analisada com base nos documentos, na dinâmica da fraude, no comportamento do consumidor, na resposta do banco e nos mecanismos de segurança que deveriam ter sido aplicados.</p>
+
+        <h2>O que diz a Súmula 479 do STJ?</h2>
+        <p>A Súmula 479 do Superior Tribunal de Justiça é uma das principais referências sobre o tema. Ela estabelece que as instituições financeiras respondem objetivamente pelos danos gerados por fortuito interno relativo a fraudes e delitos praticados por terceiros no âmbito de operações bancárias.</p>
+
+        <p>Na prática, isso significa que determinadas fraudes fazem parte do risco da atividade bancária. Quando o problema está ligado à própria operação financeira, à segurança do sistema, ao controle de movimentações ou ao ambiente de prestação do serviço bancário, o banco pode ser responsabilizado.</p>
+
+        <div class="warning-box">
+          <p><strong>Ponto central:</strong> o banco não pode simplesmente transferir ao consumidor todo o risco de fraude quando a situação está relacionada à segurança do serviço bancário, ao funcionamento do sistema ou à ausência de prevenção contra movimentações suspeitas.</p>
+        </div>
+
+        <h2>O que é fortuito interno?</h2>
+        <p>Fortuito interno é o risco ligado à própria atividade desenvolvida pelo fornecedor. No contexto bancário, fraudes praticadas dentro do ambiente de operações financeiras podem ser consideradas riscos inerentes ao serviço, especialmente quando envolvem falhas de segurança, autenticação, controle ou monitoramento.</p>
+
+        <p>Isso não significa que todo golpe será automaticamente indenizável. Significa que o banco deve demonstrar a regularidade da operação e a ausência de defeito no serviço quando o consumidor apresenta elementos consistentes de fraude.</p>
+
+        <h2>Quando o banco pode ser responsabilizado?</h2>
+        <p>O banco pode ser responsabilizado em situações como:</p>
+
+        <ul>
+          <li>transações não reconhecidas pelo cliente;</li>
+          <li>golpe PIX com movimentação atípica;</li>
+          <li>empréstimo contratado sem autorização;</li>
+          <li>compra não reconhecida no cartão;</li>
+          <li>saque indevido;</li>
+          <li>invasão de conta bancária;</li>
+          <li>falha no bloqueio de operações suspeitas;</li>
+          <li>demora injustificada na análise da contestação;</li>
+          <li>negativa genérica de estorno;</li>
+          <li>ausência de providência após comunicação imediata da fraude.</li>
+        </ul>
+
+        <h2>Golpe PIX: existe responsabilidade do banco?</h2>
+        <p>O golpe PIX é um dos problemas mais frequentes. A responsabilidade do banco depende da análise do caso. Se a operação foi atípica, se houve múltiplas transferências em curto intervalo, se o valor destoava do padrão do cliente ou se o banco ignorou sinais evidentes de fraude, pode haver fundamento para responsabilização.</p>
+
+        <p>Também é relevante analisar se o consumidor comunicou rapidamente a fraude, se o banco adotou providências efetivas, se houve tentativa de bloqueio dos valores e se a resposta administrativa foi adequada.</p>
+
+        <h2>Fraude por aplicativo bancário</h2>
+        <p>Fraudes em aplicativo bancário podem envolver invasão de conta, alteração de senha, contratação de empréstimo, transferência indevida, pagamento de boleto fraudulento ou movimentações que o consumidor afirma não ter autorizado.</p>
+
+        <p>Nesses casos, a análise deve verificar se houve falha de autenticação, ausência de dupla verificação, acesso de dispositivo desconhecido, transações incompatíveis com o histórico do consumidor e atuação eficiente do banco após a contestação.</p>
+
+        <h2>Compras não reconhecidas no cartão</h2>
+        <p>Compras não reconhecidas no cartão de crédito ou débito também podem gerar responsabilidade. O banco ou administradora deve analisar a contestação de forma adequada, especialmente quando as compras são incompatíveis com o perfil do consumidor, ocorreram em localidade incomum ou foram feitas em sequência suspeita.</p>
+
+        <p>A negativa de estorno sem justificativa clara pode fortalecer a discussão judicial, principalmente quando o consumidor apresenta documentos e protocolos demonstrando que comunicou o problema.</p>
+
+        <h2>Empréstimos fraudulentos</h2>
+        <p>Outra situação recorrente é o empréstimo não contratado. O consumidor descobre a existência de contrato em seu nome, descontos indevidos, crédito não solicitado ou operação realizada sem autorização válida.</p>
+
+        <p>Nesses casos, podem ser discutidos cancelamento do contrato, restituição dos valores, declaração de inexistência da dívida e eventual indenização, conforme os danos sofridos.</p>
+
+        <h2>Quando cabe indenização por dano moral?</h2>
+        <p>A indenização por dano moral depende das consequências concretas da fraude e da conduta do banco. Pode ser cabível quando o consumidor sofre prejuízo relevante, fica privado de valores essenciais, tem o nome negativado, enfrenta cobrança indevida, sofre bloqueio injustificado ou recebe tratamento inadequado após comunicar o problema.</p>
+
+        <p>Nem todo transtorno gera dano moral. A análise deve demonstrar que a falha ultrapassou mero aborrecimento e produziu impacto efetivo na vida do consumidor.</p>
+
+        <h2>O que o consumidor deve fazer imediatamente?</h2>
+        <p>Ao perceber uma fraude bancária, o consumidor deve agir rapidamente para preservar provas e registrar a tentativa de solução administrativa.</p>
+
+        <ul>
+          <li>registrar boletim de ocorrência, quando aplicável;</li>
+          <li>comunicar o banco pelos canais oficiais;</li>
+          <li>guardar todos os protocolos;</li>
+          <li>salvar prints do aplicativo e das transações;</li>
+          <li>baixar extratos antes e depois da fraude;</li>
+          <li>guardar mensagens, e-mails e notificações;</li>
+          <li>solicitar resposta formal do banco;</li>
+          <li>não apagar conversas relacionadas ao golpe.</li>
+        </ul>
+
+        <h2>Quais provas fortalecem a ação?</h2>
+        <p>As provas mais importantes costumam ser extratos bancários, comprovantes de transações, prints do aplicativo, protocolos de atendimento, boletim de ocorrência, resposta do banco, mensagens recebidas, e-mails, notificações e documentos que mostrem o padrão normal de uso da conta.</p>
+
+        <p>Quando possível, é útil demonstrar que a movimentação questionada fugiu do comportamento habitual do consumidor, seja pelo valor, horário, destinatário, quantidade de operações ou forma de autenticação.</p>
+
+        <h2>Banco negou o estorno: isso encerra o caso?</h2>
+        <p>Não. A negativa administrativa do banco não encerra a discussão. Muitas ações judiciais começam justamente após o banco recusar o estorno, responder de forma genérica ou não apresentar justificativa clara para manter o prejuízo do consumidor.</p>
+
+        <p>O mais importante é organizar a documentação e avaliar se há elementos para demonstrar falha na prestação do serviço.</p>
+
+        <h2>Como saber se vale a pena entrar com ação?</h2>
+        <p>Vale a pena avaliar ação judicial quando há prejuízo documentado, contestação administrativa, indícios de fraude, resposta insatisfatória do banco e elementos que indiquem defeito de segurança ou falha na prestação do serviço.</p>
+
+        <p>Cada caso deve ser analisado individualmente. A mesma fraude pode ter soluções diferentes conforme os documentos disponíveis, a conduta do banco e a dinâmica dos fatos.</p>
+
+        <div class="links-grid">
+          <a href="fraudes-bancarias.html">Fraudes bancárias<span>Atuação contra golpes, PIX e transações indevidas.</span></a>
+          <a href="art-banco-nao-devolveu-vale-a-pena-processar.html">Banco não devolveu dinheiro<span>Veja quando a ação contra o banco pode ser viável.</span></a>
+          <a href="direito-digital.html">Direito digital<span>Problemas envolvendo internet, golpes e responsabilidade online.</span></a>
+        </div>
+
+        <h2>Perguntas frequentes</h2>
+
+        <details>
+          <summary>O banco sempre responde por golpe PIX?</summary>
+          <p>Não sempre. A responsabilidade depende da existência de falha de segurança, movimentação atípica, omissão do banco, resposta inadequada ou outros elementos que indiquem defeito na prestação do serviço.</p>
+        </details>
+
+        <details>
+          <summary>O que é a Súmula 479 do STJ?</summary>
+          <p>É o entendimento segundo o qual instituições financeiras respondem objetivamente por danos gerados por fortuito interno relativo a fraudes e delitos praticados por terceiros no âmbito de operações bancárias.</p>
+        </details>
+
+        <details>
+          <summary>Compra não reconhecida no cartão pode gerar ação?</summary>
+          <p>Sim. Quando o consumidor contesta a compra e existem indícios de fraude ou falha na análise do banco, pode haver fundamento para ação judicial.</p>
+        </details>
+
+        <details>
+          <summary>Empréstimo não contratado pode ser cancelado?</summary>
+          <p>Pode ser discutido judicialmente, especialmente quando o consumidor não reconhece a contratação e há descontos, cobranças ou prejuízo decorrente da operação.</p>
+        </details>
+
+        <details>
+          <summary>Preciso fazer boletim de ocorrência?</summary>
+          <p>É recomendável em casos de fraude. O boletim ajuda a documentar a ocorrência e reforça a seriedade da contestação.</p>
+        </details>
+
+        <details>
+          <summary>Banco pode alegar culpa exclusiva do consumidor?</summary>
+          <p>Pode. Por isso, é essencial analisar os fatos, documentos, forma da fraude e conduta das partes para avaliar a viabilidade da ação.</p>
+        </details>
+
+        <details>
+          <summary>Quando cabe dano moral contra banco?</summary>
+          <p>O dano moral pode ser cabível quando a falha causa prejuízo relevante, negativação, privação de valores, cobrança indevida ou situação que ultrapasse mero aborrecimento.</p>
+        </details>
+
+        <details>
+          <summary>O que guardar para processar o banco?</summary>
+          <p>Extratos, comprovantes, prints, protocolos, boletim de ocorrência, resposta do banco, mensagens, e-mails e qualquer documento ligado à fraude.</p>
+        </details>
+
+        <section class="cta-section">
+          <h2>Sofreu fraude bancária ou golpe PIX?</h2>
+          <p>O primeiro passo é analisar a documentação, a dinâmica da fraude, a resposta do banco e os fundamentos para eventual responsabilização da instituição financeira.</p>
+          <a class="btn" href="https://wa.me/5512974063026">Falar com advogado pelo WhatsApp</a>
+        </section>
+      </article>
+
+      <aside>
+        <div class="side-card">
+          <h2>Resumo prático</h2>
+          <ul>
+            <li>Banco pode responder por fortuito interno.</li>
+            <li>Súmula 479 do STJ é referência central.</li>
+            <li>Golpe PIX depende da análise do caso.</li>
+            <li>Transações atípicas fortalecem a discussão.</li>
+            <li>Provas e protocolos são essenciais.</li>
+          </ul>
+        </div>
+
+        <div class="side-card">
+          <h2>Documentos úteis</h2>
+          <ul>
+            <li>extratos bancários;</li>
+            <li>comprovantes das transações;</li>
+            <li>prints do aplicativo;</li>
+            <li>boletim de ocorrência;</li>
+            <li>protocolos de atendimento;</li>
+            <li>resposta formal do banco.</li>
+          </ul>
+        </div>
+
+        <div class="side-card">
+          <h2>Áreas relacionadas</h2>
+          <ul>
+            <li><a href="fraudes-bancarias.html">Fraudes bancárias</a></li>
+            <li><a href="direito-digital.html">Direito digital</a></li>
+            <li><a href="contencioso-civel.html">Contencioso cível</a></li>
+            <li><a href="artigos.html">Artigos jurídicos</a></li>
+          </ul>
+        </div>
+
+        <div class="side-card">
+          <h2>Atendimento</h2>
+          <p>Atendimento online, com análise objetiva da fraude, dos documentos e da viabilidade de medida contra o banco.</p>
+          <a class="btn" href="https://wa.me/5512974063026">Chamar no WhatsApp</a>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <strong>CMSM Advocacia</strong><br>
+        © 2026
+      </div>
+      <div>
+        contato@cmsm.com.br<br>
+        Atendimento online em todo o Brasil
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
