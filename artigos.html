@@ -3,382 +3,65 @@
 <head>
 <meta charset="utf-8">
 <title>Artigos Jurídicos | CMSM Advocacia</title>
-<meta name="description" content="Artigos jurídicos da CMSM Advocacia sobre divórcio, guarda, partilha de bens, inventário, cobrança judicial, execução de título extrajudicial e fraudes bancárias.">
+<meta name="description" content="Artigos jurídicos da CMSM Advocacia sobre divórcio, inventário, cobrança judicial, fraudes bancárias, direito digital, responsabilidade civil e execução de títulos.">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="index,follow">
 <meta name="theme-color" content="#0b1220">
 <link rel="canonical" href="https://www.cmsm.com.br/artigos.html">
 
-<meta property="og:locale" content="pt_BR">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Artigos Jurídicos | CMSM Advocacia">
-<meta property="og:description" content="Conteúdo jurídico informativo sobre temas cíveis, familiares, sucessórios, bancários e digitais.">
-<meta property="og:url" content="https://www.cmsm.com.br/artigos.html">
-<meta property="og:site_name" content="CMSM Advocacia">
-
 <style>
 *{box-sizing:border-box;}
-
 :root{
---bg:#08101d;
---bg-2:#071120;
---panel:#101a2d;
---panel-2:#0d1728;
---line:#1e2b45;
---line-2:#29406a;
---text:#e8edf6;
---muted:#b7c2da;
---muted-2:#8fa3c7;
---green:#25d366;
---green-2:#1fb958;
---btn-dark:#14243f;
---gold:#c8a96b;
---shadow:0 22px 40px rgba(0,0,0,0.26);
+--bg:#0b1220;--bg-2:#071120;--panel:#101a2d;--panel-2:#0d1728;--line:#1e2b45;--line-2:#29406a;--text:#e8edf6;--muted:#b7c2da;--muted-2:#8fa3c7;--green:#25d366;--green-2:#1fb958;--btn-dark:#14243f;--gold:#c8a96b;--shadow:0 22px 40px rgba(0,0,0,0.26);
 }
-
-html{
-scroll-behavior:smooth;
-}
-
-body{
-margin:0;
-font-family:-apple-system,BlinkMacSystemFont,Arial,sans-serif;
-background:
-radial-gradient(circle at top center, rgba(37,77,139,0.22), transparent 30%),
-linear-gradient(180deg,#08101d 0%,#09111e 100%);
-color:var(--text);
-line-height:1.6;
-}
-
-a{
-color:inherit;
-}
-
-.header-wrap{
-position:sticky;
-top:0;
-z-index:30;
-background:rgba(7,17,32,0.92);
-backdrop-filter:blur(10px);
-border-bottom:1px solid var(--line);
-}
-
-header{
-max-width:1200px;
-margin:auto;
-padding:18px 24px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-gap:20px;
-}
-
-.brand{
-display:flex;
-align-items:center;
-gap:12px;
-text-decoration:none;
-color:#fff;
-}
-
-.brand img{
-height:52px;
-width:auto;
-display:block;
-}
-
-.brand span{
-font-family:Garamond,Baskerville,"Times New Roman",serif;
-font-size:20px;
-font-weight:700;
-letter-spacing:.3px;
-}
-
-nav{
-display:flex;
-align-items:center;
-gap:18px;
-flex-wrap:wrap;
-}
-
-nav a{
-color:#fff;
-text-decoration:none;
-font-weight:600;
-font-size:14px;
-opacity:.94;
-}
-
-nav a:hover{
-opacity:1;
-text-decoration:underline;
-}
-
-.nav-cta{
-display:inline-flex;
-align-items:center;
-justify-content:center;
-padding:10px 16px;
-border-radius:999px;
-background:var(--btn-dark);
-border:1px solid var(--line-2);
-font-weight:700;
-text-decoration:none;
-}
-
-main{
-max-width:1200px;
-margin:auto;
-padding:56px 24px 72px;
-}
-
-.hero{
-max-width:920px;
-margin:auto;
-text-align:center;
-padding:36px 0 26px;
-}
-
-.hero-kicker{
-display:inline-block;
-margin-bottom:16px;
-padding:8px 14px;
-border-radius:999px;
-border:1px solid rgba(255,255,255,0.12);
-background:rgba(255,255,255,0.03);
-font-size:12px;
-font-weight:700;
-letter-spacing:.08em;
-text-transform:uppercase;
-color:#dbe7f8;
-}
-
-h1{
-font-family:Garamond,Baskerville,"Times New Roman",serif;
-font-size:48px;
-line-height:1.1;
-margin:0 0 16px;
-}
-
-.hero p{
-max-width:760px;
-margin:auto;
-color:#c3cfe4;
-font-size:18px;
-}
-
-.hero-actions{
-display:flex;
-justify-content:center;
-gap:14px;
-flex-wrap:wrap;
-margin-top:26px;
-}
-
-.btn{
-display:inline-flex;
-align-items:center;
-justify-content:center;
-padding:14px 22px;
-border-radius:10px;
-font-weight:700;
-text-decoration:none;
-border:1px solid var(--line-2);
-background:var(--btn-dark);
-color:#fff;
-transition:.2s ease;
-}
-
-.btn:hover{
-transform:translateY(-2px);
-}
-
-.btn-whatsapp{
-background:var(--green);
-border-color:var(--green);
-}
-
-.btn-whatsapp:hover{
-background:var(--green-2);
-}
-
-.section{
-margin-top:70px;
-}
-
-.section-header{
-margin-bottom:24px;
-}
-
-.section h2{
-font-family:Garamond,Baskerville,"Times New Roman",serif;
-font-size:36px;
-margin:0 0 10px;
-}
-
-.section-copy{
-max-width:860px;
-margin:0;
-font-size:16px;
-color:#aebbd6;
-}
-
-.grid{
-display:grid;
-gap:24px;
-grid-template-columns:repeat(3,minmax(0,1fr));
-}
-
-.card{
-background:linear-gradient(180deg,#101a2d 0%,#0d1728 100%);
-padding:24px;
-border-radius:14px;
-border:1px solid var(--line);
-box-shadow:var(--shadow);
-}
-
-.card:hover{
-border-color:#3c66ff;
-transform:translateY(-4px);
-transition:.2s ease;
-}
-
-.card-tag{
-display:inline-block;
-margin:0 0 12px;
-padding:5px 9px;
-border-radius:999px;
-background:#0d2239;
-border:1px solid #273a5c;
-color:var(--gold);
-font-size:11px;
-font-weight:700;
-letter-spacing:.7px;
-text-transform:uppercase;
-}
-
-.card h3{
-font-family:Garamond,Baskerville,"Times New Roman",serif;
-font-size:25px;
-line-height:1.2;
-margin:0 0 10px;
-}
-
-.card p{
-margin:0;
-color:var(--muted);
-font-size:15px;
-}
-
-.card-actions{
-display:flex;
-gap:12px;
-flex-wrap:wrap;
-margin-top:18px;
-}
-
-.link{
-display:inline-flex;
-font-weight:700;
-color:#fff;
-text-decoration:none;
-}
-
-.link:hover{
-text-decoration:underline;
-}
-
-.featured{
-border-color:#25d366;
-background:linear-gradient(180deg,#102317 0%,#0d1c14 100%);
-}
-
-.cta-band{
-margin-top:76px;
-padding:28px;
-background:linear-gradient(180deg,#101a2d 0%,#0d1728 100%);
-border:1px solid var(--line);
-border-radius:16px;
-box-shadow:var(--shadow);
-display:flex;
-justify-content:space-between;
-align-items:center;
-gap:20px;
-}
-
-.cta-band h2{
-font-family:Garamond,Baskerville,"Times New Roman",serif;
-font-size:30px;
-margin:0 0 6px;
-}
-
-.cta-band p{
-margin:0;
-color:var(--muted);
-max-width:720px;
-}
-
-footer{
-margin-top:70px;
-background:#071120;
-padding:28px 24px;
-text-align:center;
-color:#9fb0cf;
-border-top:1px solid #1c2a44;
-}
-
-footer p{
-margin:6px 0;
-}
-
-footer p:first-child{
-font-family:Garamond,Baskerville,"Times New Roman",serif;
-font-size:20px;
-color:#fff;
-}
-
-@media(max-width:1020px){
-.grid{
-grid-template-columns:1fr;
-}
-
-.cta-band{
-flex-direction:column;
-align-items:flex-start;
-}
-}
-
-@media(max-width:760px){
-header{
-flex-direction:column;
-align-items:flex-start;
-gap:14px;
-}
-
-nav{
-gap:14px;
-}
-
-main{
-padding:42px 18px 60px;
-}
-
-h1{
-font-size:34px;
-}
-
-.section{
-margin-top:58px;
-}
-
-.section h2{
-font-size:30px;
-}
-
-.card h3{
-font-size:23px;
-}
-}
+html{scroll-behavior:smooth;}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,Arial,sans-serif;background:radial-gradient(circle at top center, rgba(42,79,140,0.18), transparent 28%),linear-gradient(180deg,#0b1220 0%,#09111e 100%);color:var(--text);line-height:1.6;}
+a{color:inherit;}
+.header-wrap{position:sticky;top:0;z-index:30;background:rgba(7,17,32,0.92);backdrop-filter:blur(10px);border-bottom:1px solid #1c2a44;}
+header{max-width:1200px;margin:auto;padding:18px 24px;display:flex;justify-content:space-between;align-items:center;gap:20px;}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff;min-width:0;}
+.brand img{height:52px;width:auto;display:block;}
+.brand span{font-family:Garamond,Baskerville,"Times New Roman",serif;font-size:20px;font-weight:700;letter-spacing:0.3px;}
+nav{display:flex;align-items:center;gap:18px;flex-wrap:wrap;}
+nav a{color:#fff;text-decoration:none;font-weight:600;font-size:14px;opacity:0.94;}
+nav a:hover{opacity:1;text-decoration:underline;}
+.nav-cta{display:inline-flex;align-items:center;justify-content:center;padding:10px 16px;border-radius:999px;background:var(--btn-dark);border:1px solid var(--line-2);font-weight:700;text-decoration:none;}
+main{max-width:1200px;margin:auto;padding:56px 24px 72px;}
+.hero{padding:40px 0 10px;display:flex;justify-content:center;}
+.hero-copy{max-width:850px;text-align:center;margin:auto;}
+.hero-brand{display:flex;flex-direction:column;align-items:center;gap:12px;margin-bottom:20px;}
+.hero-logo{height:92px;width:auto;display:block;}
+.nome{font-family:Garamond,Baskerville,"Times New Roman",serif;font-size:44px;letter-spacing:1.2px;text-transform:uppercase;line-height:1.12;margin:0;}
+.sub{font-family:Garamond,Baskerville,"Times New Roman",serif;letter-spacing:4px;font-size:13px;color:var(--muted-2);margin-top:8px;text-transform:uppercase;}
+.kicker{display:inline-block;margin:0 0 14px 0;padding:6px 10px;border-radius:999px;background:#0d2239;border:1px solid #273a5c;color:var(--gold);font-size:12px;font-weight:800;letter-spacing:.9px;text-transform:uppercase;}
+.hero h1{font-family:Garamond,Baskerville,"Times New Roman",serif;font-size:38px;line-height:1.12;margin:0 0 14px 0;}
+.hero p{max-width:790px;margin:auto;text-align:center;color:#aebbd6;font-size:17px;}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:24px;justify-content:center;}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 22px;border-radius:10px;font-weight:700;text-decoration:none;border:1px solid var(--line-2);background:var(--btn-dark);color:#fff;transition:.2s ease;}
+.btn:hover{transform:translateY(-2px);}
+.btn-whatsapp{background:var(--green);border-color:var(--green);}
+.btn-whatsapp:hover{background:var(--green-2);}
+.section{margin-top:78px;}
+.section-header{margin-bottom:24px;}
+.section h2{font-family:Garamond,Baskerville,"Times New Roman",serif;font-size:36px;margin:0 0 10px 0;}
+.section-copy{max-width:900px;margin:0;font-size:16px;color:#aebbd6;}
+.grid-3{display:grid;gap:24px;grid-template-columns:repeat(3,minmax(0,1fr));}
+.card{background:linear-gradient(180deg,#101a2d 0%,#0d1728 100%);padding:22px;border-radius:14px;border:1px solid var(--line);box-shadow:var(--shadow);}
+.card h3{font-family:Garamond,Baskerville,"Times New Roman",serif;font-size:25px;margin:0 0 10px 0;}
+.card p{margin:0;color:var(--muted);}
+.card a{text-decoration:none;display:block;}
+.card:hover{border-color:#3c66ff;transform:translateY(-4px);transition:.2s ease;}
+.card-tag{display:inline-block;margin:0 0 12px 0;padding:5px 9px;border-radius:999px;background:#0d2239;border:1px solid #273a5c;color:var(--gold);font-size:11px;font-weight:700;letter-spacing:.7px;text-transform:uppercase;}
+.article-link{display:inline-flex;margin-top:14px;color:#fff;font-weight:700;text-decoration:none;}
+.article-link:hover{text-decoration:underline;}
+.cta-band{margin-top:78px;padding:28px;background:linear-gradient(180deg,#101a2d 0%,#0d1728 100%);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);display:flex;justify-content:space-between;align-items:center;gap:20px;}
+.cta-band h3{font-family:Garamond,Baskerville,"Times New Roman",serif;font-size:30px;margin:0 0 6px 0;}
+.cta-band p{margin:0;color:var(--muted);max-width:700px;}
+footer{margin-top:70px;background:#071120;padding:28px 24px;text-align:center;color:#9fb0cf;border-top:1px solid #1c2a44;}
+footer p{margin:6px 0;}
+footer p:first-child{font-family:Garamond,Baskerville,"Times New Roman",serif;font-size:20px;color:#fff;}
+@media(max-width:1020px){.grid-3{grid-template-columns:1fr;}.cta-band{flex-direction:column;align-items:flex-start;}}
+@media(max-width:760px){header{flex-direction:column;align-items:flex-start;gap:14px;}nav{gap:14px;}main{padding:42px 18px 60px;}.hero-logo{height:82px;}.nome{font-size:31px;}.hero h1{font-size:28px;}.section{margin-top:60px;}.section h2{font-size:30px;}.card h3,.cta-band h3{font-size:23px;}}
 </style>
 </head>
 
@@ -395,8 +78,8 @@ font-size:23px;
 <a href="index.html">Início</a>
 <a href="index.html#areas">Atuação</a>
 <a href="index.html#metodo">Método</a>
-<a href="index.html#contato">Contato</a>
-<a class="nav-cta" href="https://wa.me/5512974063026?text=Olá,%20vim%20pela%20página%20de%20artigos%20da%20CMSM%20Advocacia%20e%20gostaria%20de%20orientação.">WhatsApp</a>
+<a href="contato.html">Contato</a>
+<a class="nav-cta" href="https://wa.me/5512974063026?text=Olá,%20vim%20pelo%20site%20da%20CMSM%20Advocacia%20e%20gostaria%20de%20orientação.">WhatsApp</a>
 </nav>
 </header>
 </div>
@@ -404,15 +87,23 @@ font-size:23px;
 <main>
 
 <section class="hero">
-<div class="hero-kicker">Conteúdo jurídico informativo</div>
+<div class="hero-copy">
+<div class="hero-brand">
+<img src="logo.png" alt="CMSM Advocacia" class="hero-logo">
+<div class="nome">Campos Melo &amp; Silva Machado</div>
+<div class="sub">Advocacia</div>
+</div>
+
+<div class="kicker">Conteúdo jurídico informativo</div>
 <h1>Artigos jurídicos da CMSM Advocacia</h1>
 <p>
-Textos objetivos sobre temas familiares, sucessórios, bancários, contratuais e cíveis, com foco em dúvidas reais e situações que normalmente antecedem uma decisão jurídica.
+Textos objetivos sobre temas familiares, sucessórios, bancários, contratuais, digitais e cíveis, com foco em dúvidas reais e situações que normalmente antecedem uma decisão jurídica.
 </p>
 
-<div class="hero-actions">
+<div class="hero-cta">
 <a href="#artigos-site" class="btn">Ver artigos do site</a>
-<a href="https://machadobruno.jusbrasil.com.br/publicacoes" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">Ver publicações no Jusbrasil</a>
+<a href="https://machadobruno.jusbrasil.com.br/" class="btn">Ver publicações no Jusbrasil</a>
+</div>
 </div>
 </section>
 
@@ -424,72 +115,75 @@ Conteúdo próprio publicado no domínio da CMSM Advocacia, com foco em orienta�
 </p>
 </div>
 
-<div class="grid">
+<div class="grid-3">
 
-<article class="card featured">
+<div class="card">
+<a href="art-divorcio-guarda-partilha-bens.html">
 <div class="card-tag">Divórcio</div>
 <h3>Divórcio, guarda e partilha de bens: o que precisa ser resolvido antes de seguir em frente</h3>
 <p>Artigo didático sobre os principais pontos que devem ser definidos quando o fim do casamento envolve filhos, patrimônio, pensão ou convivência familiar.</p>
-<div class="card-actions">
-<a class="btn btn-whatsapp" href="art-divorcio-guarda-partilha-bens.html">Ler artigo</a>
-<a class="link" href="divorcio-online.html">Ver página de divórcio</a>
+<span class="article-link">Ler artigo</span>
+</a>
 </div>
-</article>
 
-<article class="card">
+<div class="card">
+<a href="art-divorcio-como-funciona.html">
 <div class="card-tag">Divórcio</div>
 <h3>Divórcio: como funciona, quanto custa e quando vale a pena fazer</h3>
 <p>Entenda quando o divórcio pode ser simples, quando exige processo judicial e quais documentos normalmente ajudam na análise inicial.</p>
-<div class="card-actions">
-<a class="btn" href="art-divorcio-como-funciona.html">Ler artigo</a>
-<a class="link" href="divorcio-online.html">Ver página de divórcio</a>
+<span class="article-link">Ler artigo</span>
+</a>
 </div>
-</article>
 
-<article class="card">
+<div class="card">
+<a href="art-quanto-custa-divorcio.html">
 <div class="card-tag">Divórcio</div>
 <h3>Quanto custa um divórcio em 2026?</h3>
 <p>Veja quais fatores influenciam o custo do divórcio, como bens, filhos, consenso entre as partes e complexidade do caso.</p>
-<div class="card-actions">
-<a class="btn" href="art-quanto-custa-divorcio.html">Ler artigo</a>
-<a class="link" href="divorcio-online.html">Ver página de divórcio</a>
+<span class="article-link">Ler artigo</span>
+</a>
 </div>
-</article>
 
-<article class="card">
+<div class="card">
+<a href="art-banco-nao-devolveu-vale-a-pena-processar.html">
 <div class="card-tag">Fraudes bancárias</div>
 <h3>Banco não devolveu dinheiro: vale a pena processar?</h3>
 <p>Entenda quando a recusa do banco pode ser indevida e em que situações a ação judicial pode ser uma alternativa viável.</p>
-<div class="card-actions">
-<a class="btn" href="art-banco-nao-devolveu-vale-a-pena-processar.html">Ler artigo</a>
-<a class="link" href="fraude-bancaria.html">Ver página bancária</a>
+<span class="article-link">Ler artigo</span>
+</a>
 </div>
-</article>
 
-<article class="card">
+<div class="card">
+<a href="art-responsabilidade-banco-fraudes-stj.html">
 <div class="card-tag">Bancário</div>
 <h3>Responsabilidade do banco em fraudes: o que diz o STJ</h3>
 <p>Artigo sobre o entendimento aplicado em fraudes bancárias, fortuito interno e responsabilidade das instituições financeiras.</p>
-<div class="card-actions">
-<a class="btn" href="art-responsabilidade-banco-fraudes-stj.html">Ler artigo</a>
-<a class="link" href="fraude-bancaria.html">Ver página bancária</a>
+<span class="article-link">Ler artigo</span>
+</a>
 </div>
-</article>
 
-<article class="card">
+<div class="card">
+<a href="art-cai-em-golpe-online-o-que-fazer.html">
 <div class="card-tag">Direito digital</div>
 <h3>Cai em golpe online: o que fazer?</h3>
 <p>Orientações iniciais para preservar provas, comunicar a instituição envolvida e avaliar os próximos passos jurídicos.</p>
-<div class="card-actions">
-<a class="btn" href="art-cai-em-golpe-online-o-que-fazer.html">Ler artigo</a>
-<a class="link" href="direito-digital.html">Ver direito digital</a>
+<span class="article-link">Ler artigo</span>
+</a>
 </div>
-</article>
+
+<div class="card">
+<a href="art-execucao-cheque-prescrito.html">
+<div class="card-tag">Cobrança</div>
+<h3>Cheque prescrito ainda pode ser cobrado? Entenda os prazos e alternativas jurídicas</h3>
+<p>Entenda quando ainda pode existir caminho jurídico para cobrar cheque antigo, mesmo após o fim do prazo de execução.</p>
+<span class="article-link">Ler artigo</span>
+</a>
+</div>
 
 </div>
 </section>
 
-<section id="jusbrasil" class="section">
+<section class="section">
 <div class="section-header">
 <h2>Publicações no Jusbrasil</h2>
 <p class="section-copy">
@@ -497,57 +191,44 @@ Além dos artigos próprios do site, a CMSM Advocacia mantém publicações no J
 </p>
 </div>
 
-<div class="grid">
+<div class="grid-3">
 
-<article class="card">
+<div class="card">
+<a href="https://machadobruno.jusbrasil.com.br/">
 <div class="card-tag">Sucessões</div>
 <h3>Inventário precisa ser feito em quanto tempo? Entenda os prazos.</h3>
 <p>Texto sobre prazo de abertura do inventário, efeitos da demora e cuidados iniciais após o falecimento.</p>
-<div class="card-actions">
-<a class="btn" href="https://machadobruno.jusbrasil.com.br/publicacoes" target="_blank" rel="noopener noreferrer">Ler no Jusbrasil</a>
-<a class="link" href="inventario-online.html">Ver página de inventário</a>
+<span class="article-link">Ler no Jusbrasil</span>
+</a>
 </div>
-</article>
 
-<article class="card">
+<div class="card">
+<a href="https://machadobruno.jusbrasil.com.br/">
 <div class="card-tag">Cobrança</div>
 <h3>Como cobrar uma dívida judicialmente: quando vale a pena entrar com ação</h3>
 <p>Conteúdo sobre análise prévia da dívida, documentação, viabilidade da cobrança e caminhos processuais.</p>
-<div class="card-actions">
-<a class="btn" href="https://machadobruno.jusbrasil.com.br/publicacoes" target="_blank" rel="noopener noreferrer">Ler no Jusbrasil</a>
-<a class="link" href="execucao-titulo-extrajudicial.html">Ver página de execução</a>
+<span class="article-link">Ler no Jusbrasil</span>
+</a>
 </div>
-</article>
 
-<article class="card">
+<div class="card">
+<a href="https://machadobruno.jusbrasil.com.br/">
 <div class="card-tag">Família</div>
 <h3>Divórcio online: quando é possível?</h3>
 <p>Artigo sobre hipóteses em que o divórcio pode ser conduzido de forma mais simples, inclusive com apoio digital.</p>
-<div class="card-actions">
-<a class="btn" href="https://machadobruno.jusbrasil.com.br/publicacoes" target="_blank" rel="noopener noreferrer">Ler no Jusbrasil</a>
-<a class="link" href="divorcio-online.html">Ver página de divórcio</a>
+<span class="article-link">Ler no Jusbrasil</span>
+</a>
 </div>
-</article>
-
-<article class="card">
-<div class="card-tag">Bancário</div>
-<h3>Como contestar cobrança indevida do banco em 3 passos simples</h3>
-<p>Publicação voltada a cobranças bancárias indevidas, tarifas não contratadas e problemas recorrentes com instituições financeiras.</p>
-<div class="card-actions">
-<a class="btn" href="https://www.jusbrasil.com.br/artigos/como-contestar-cobranca-indevida-do-banco-em-3-passos-simples/4820089264" target="_blank" rel="noopener noreferrer">Ler artigo</a>
-<a class="link" href="fraude-bancaria.html">Ver página bancária</a>
-</div>
-</article>
 
 </div>
 </section>
 
 <div class="cta-band">
 <div>
-<h2>Quer entender qual caminho jurídico faz sentido no seu caso?</h2>
+<h3>Quer entender qual caminho jurídico faz sentido no seu caso?</h3>
 <p>O primeiro passo é organizar os fatos, documentos e objetivos. A análise inicial permite identificar riscos, alternativas e a estratégia mais adequada.</p>
 </div>
-<a href="https://wa.me/5512974063026?text=Olá,%20vim%20pela%20página%20de%20artigos%20da%20CMSM%20Advocacia%20e%20gostaria%20de%20orientação." class="btn btn-whatsapp">Falar com advogado</a>
+<a href="https://wa.me/5512974063026?text=Olá,%20vim%20pelo%20site%20da%20CMSM%20Advocacia%20e%20gostaria%20de%20orientação." class="btn btn-whatsapp">Falar com advogado</a>
 </div>
 
 </main>
