@@ -1,0 +1,11 @@
+:root{--cmsm-navy:#071722;--cmsm-ivory:#f4f0e7;--cmsm-gold:#b39359;--cmsm-ink:#10202a;--cmsm-line:#d7d0c4}
+html{scroll-behavior:smooth}body{background:var(--cmsm-ivory)!important;color:var(--cmsm-ink)!important;font-family:Arial,Helvetica,sans-serif!important}
+header,.header-wrap{background:var(--cmsm-navy)!important;border-color:rgba(255,255,255,.13)!important;border-radius:0!important;box-shadow:none!important}
+header{max-width:none!important;padding:20px 6vw!important}.brand img,header img{max-height:54px}.brand span{font-family:Georgia,serif!important;letter-spacing:.08em!important}
+nav a{color:#e9e7e0!important;font-size:11px!important;letter-spacing:.08em!important;text-decoration:none!important}.nav-cta{border:1px solid rgba(179,147,89,.7)!important;border-radius:0!important;background:transparent!important}
+main{max-width:1120px!important;padding:70px 24px 100px!important}.hero{padding:38px 0!important}.hero-copy{max-width:900px!important}.hero-logo{max-height:85px}
+h1,h2,h3,.nome{font-family:Georgia,serif!important;font-weight:400!important}h1{font-size:clamp(42px,5vw,72px)!important;line-height:1.04!important;letter-spacing:-.035em!important;color:var(--cmsm-ink)!important}h2{font-size:clamp(30px,3vw,44px)!important;line-height:1.1!important;color:var(--cmsm-ink)!important}.hero p,p,li{color:#5f696d!important}
+.section{border-top:1px solid var(--cmsm-line)!important;padding-top:46px!important;margin-top:64px!important}.card,.list-box,.faq-item,.content-box{background:#fff!important;border:1px solid var(--cmsm-line)!important;border-radius:0!important;box-shadow:none!important}.card h3,.card h2{color:var(--cmsm-ink)!important}.card-tag,.eyebrow,.kicker{color:#8c7040!important;letter-spacing:.12em!important}
+.btn,.button,.cta-button,.nav-cta{background:var(--cmsm-navy)!important;color:#fff!important;border-radius:0!important;border-color:var(--cmsm-navy)!important}.btn-whatsapp{background:var(--cmsm-navy)!important;border-color:var(--cmsm-navy)!important}
+footer{background:#06131c!important;color:#a4adaf!important;border-radius:0!important;border-color:rgba(255,255,255,.12)!important}footer p,footer a{color:#a4adaf!important}
+@media(max-width:800px){header{padding:16px 22px!important}main{padding:48px 20px 75px!important}h1{font-size:43px!important}}
