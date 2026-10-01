@@ -13,18 +13,18 @@ body{background:#f4f0e7;color:#10202a}.contact-header{height:100px;background:#0
 <body>
 <header class="contact-header"><a class="contact-brand" href="index.html"><img src="assets/logo-cmsm.svg" alt="Brasão CMSM Advogados"><span>CMSM ADVOGADOS</span></a><span><a class="back" href="en/contact.html" lang="en">English</a> · <a class="back" href="index.html">Início</a></span></header>
 <main class="contact-page">
-<section class="contact-copy"><p class="section-label">PRIMEIRO CONTATO</p><h1>Apresente sua questão.</h1><p>Preencha os dados essenciais. O formulário abrirá o WhatsApp com uma mensagem para a CMSM. Confira o texto e toque em enviar no WhatsApp para concluir o contato.</p><div class="contact-meta"><strong>Atendimento</strong><br><span id="contact-hours"></span><br>Brasil e exterior<br><a id="contact-email" href="#"></a></div></section>
-<form class="form" id="contact-form">
+<section class="contact-copy"><p class="section-label">PRIMEIRO CONTATO</p><h1>Apresente sua questão.</h1><p>Preencha os dados essenciais. Sua mensagem será enviada diretamente à CMSM, com confirmação nesta página.</p><div class="contact-meta"><strong>Atendimento</strong><br><span id="contact-hours"></span><br>Brasil e exterior<br><a id="contact-email" href="#"></a></div></section>
+<form class="form" id="contact-form"><div hidden aria-hidden="true"><label for="website">Website</label><input id="website" name="_honey" tabindex="-1" autocomplete="off"></div>
 <div class="field"><label for="nome">Nome</label><input id="nome" name="nome" autocomplete="name" required></div>
 <div class="field"><label for="local">Cidade e país</label><input id="local" name="local" required></div>
 <div class="field"><label for="retorno">WhatsApp ou e-mail</label><input id="retorno" name="retorno" required></div>
 <div class="field"><label for="assunto">Assunto principal</label><select id="assunto" name="assunto" required><option value="">Selecione</option><option>Cobrança ou execução</option><option>Inventário ou sucessão</option><option>Questão no Brasil morando no exterior</option><option>Contrato ou negócio</option><option>Divórcio e patrimônio</option><option>Fraude bancária</option><option>Outro assunto</option></select></div>
 <div class="field full"><label for="urgencia">Existe prazo, processo ou urgência?</label><input id="urgencia" name="urgencia"></div>
 <div class="field full"><label for="resumo">Resumo da questão</label><textarea id="resumo" name="resumo" maxlength="1800" required></textarea></div>
-<label class="consent"><input type="checkbox" required><span>Autorizo o uso destes dados exclusivamente para contato e avaliação inicial da possibilidade de atendimento.</span></label>
+<label class="consent"><input type="checkbox" name="consentimento" value="sim" required><span>Autorizo o uso destes dados exclusivamente para contato e avaliação inicial da possibilidade de atendimento.</span></label>
 <p class="form-note">Não envie senhas, dados bancários ou documentos sigilosos neste primeiro contato. O envio não constitui contratação nem garante a aceitação do caso.</p>
-<button class="send" type="submit"><span>Enviar pelo WhatsApp</span><span>↗</span></button>
-</form>
+<button class="send" type="submit"><span>Enviar mensagem</span><span>↗</span></button>
+<p id="form-status" class="form-note" role="status" aria-live="polite" tabindex="-1" style="font-size:14px;grid-column:1/-1"></p><p class="form-note">Prefere WhatsApp? <a id="contact-whatsapp" href="#" target="_blank" rel="noopener" style="text-decoration:underline">Fale diretamente conosco</a>.</p></form>
 </main>
 <footer class="site-legal">Campos Melo &amp; Silva Machado Sociedade de Advogados · OAB/SP 55.445 · CNPJ 54.137.125/0001-97 · <a href="privacidade.html">Privacidade</a></footer>
 <script src="assets/site-config.js"></script><script src="assets/contact.js"></script>
