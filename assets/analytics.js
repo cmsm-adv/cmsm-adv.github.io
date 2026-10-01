@@ -77,7 +77,7 @@
   function showBanner() {
     removeBanner();
     addStyles();
-    const privacyUrl = isEnglish ? "../privacidade.html" : "privacidade.html";
+    const privacyUrl = isEnglish ? "privacy.html" : "privacidade.html";
     const banner = document.createElement("section");
     banner.id = "cmsm-cookie-banner";
     banner.setAttribute("role", "dialog");
@@ -91,7 +91,7 @@
   function addSettingsControl() {
     const footer = document.querySelector("footer");
     if (!footer || footer.querySelector(".cmsm-cookie-settings")) return;
-    const privacyLink = footer.querySelector('a[href$="privacidade.html"]');
+    const privacyLink = footer.querySelector('a[href$="privacidade.html"], a[href$="privacy.html"]');
     const button = document.createElement("button");
     button.type = "button";
     button.className = "cmsm-cookie-settings";
